@@ -1,0 +1,325 @@
+@keyframes levitation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+//   aplicar delay a cada elemento
+
+//  style={{animationDelay:"5s"}}
+
+.levitate {
+  animation: levitation 4s ease-in-out infinite;
+}
+
+@keyframes cookies {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(2px, -2px);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+
+  80% {
+    transform: translate(-2px, 2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+//   aplicar delay a cada elemento
+
+//  style={{animationDelay:"5s"}}
+
+.cookies {
+  animation: cookies 2s linear 30s infinite;
+}
+
+//   ____________________________________________________________
+
+@keyframes cosmosRight {
+  0% {
+    transform: translateY(0);
+    transform: translatex(0);
+  }
+  10% {
+    transform: translateY(-5px);
+    transform: translatex(-15px);
+  }
+  20% {
+    transform: translateY(0);
+    transform: translatex(0);
+  }
+  100% {
+    transform: translateY(0);
+    transform: translatex(0);
+  }
+}
+
+//   aplicar delay a cada elemento
+
+//  style={{animationDelay:"5s"}}
+
+.cosmosRight {
+  animation: cosmosRight 40s ease-in-out infinite;
+}
+
+@keyframes cosmosLeft {
+  0% {
+    transform: translateY(0);
+    transform: translate(0);
+  }
+  10% {
+    transform: translateY(-5px);
+    transform: translate(15px);
+  }
+  20% {
+    transform: translateY(0);
+    transform: translate(0);
+  }
+  100% {
+    transform: translateY(0);
+    transform: translate(0);
+  }
+}
+
+//   aplicar delay a cada elemento
+
+//  style={{animationDelay:"5s"}}
+
+.cosmosLeft {
+  animation: cosmosLeft 40s ease-in-out infinite;
+}
+
+@keyframes cosmosTop {
+  0% {
+    transform: translateY(0);
+    transform: translate(0);
+  }
+  10% {
+    transform: translateY(-5px);
+    transform: translatey(15px);
+  }
+  20% {
+    transform: translateY(0);
+    transform: translatey(0);
+  }
+  100% {
+    transform: translateY(0);
+    transform: translatey(0);
+  }
+}
+
+//   aplicar delay a cada elemento
+
+//  style={{animationDelay:"5s"}}
+
+.cosmosTop {
+  animation: cosmosTop 40s ease-in-out infinite;
+}
+
+@keyframes cosmosBottom {
+  0% {
+    transform: translateY(0);
+    transform: translate(0);
+  }
+  10% {
+    transform: translateY(-5px);
+    transform: translatey(-15px);
+  }
+  20% {
+    transform: translateY(0);
+    transform: translatey(0);
+  }
+  100% {
+    transform: translateY(0);
+    transform: translatey(0);
+  }
+}
+
+//   aplicar delay a cada elemento
+
+//  style={{animationDelay:"5s"}}
+
+.cosmosBottom {
+  animation: cosmosBottom 40s ease-in-out infinite;
+}
+
+// ________________________________________________________
+
+@keyframes circleRight {
+  0% {
+    transform: translateY(0);
+    transform: translatex(0);
+  }
+  50% {
+    transform: translateY(-5px);
+    transform: translatex(-20px);
+  }
+  100% {
+    transform: translateY(0);
+    transform: translatex(0);
+  }
+}
+
+//   aplicar delay a cada elemento
+
+//  style={{animationDelay:"5s"}}
+
+.circleRight {
+  animation: circleRight 60s ease-in-out infinite;
+}
+
+@keyframes circleLeft {
+  0% {
+    transform: translateY(0);
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(-5px);
+    transform: translate(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+    transform: translate(0);
+  }
+}
+
+//   aplicar delay a cada elemento
+
+//  style={{animationDelay:"5s"}}
+
+.circleLeft {
+  animation: circleLeft 60s ease-in-out infinite;
+}
+
+@keyframes fadeLeftSlow {
+  from {
+    opacity: 0;
+    transform: translateX(-70px); /* Ajuste a distância do slide para a esquerda */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeLeftSlow {
+  opacity: 0; /* Certifique-se de que o elemento começa invisível */
+  animation: fadeLeftSlow 1s ease-in-out forwards; /* Tempo de animação definido */
+}
+
+
+@keyframes fadeRightSlow {
+  from {
+    opacity: 0;
+    transform: translateX(70px); /* Ajuste a distância do slide para a direita */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeRightSlow {
+  opacity: 0; /* Certifique-se de que o elemento começa invisível */
+  animation: fadeRightSlow 1s ease-in-out forwards; /* Tempo de animação definido */
+}
+
+@keyframes fadeTopSlow {
+  from {
+    opacity: 0;
+    transform: translateY(-70px); /* Ajuste a distância do slide de cima para baixo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeBottomSlow {
+  from {
+    opacity: 0;
+    transform: translateY(70px); /* Ajuste a distância do slide de baixo para cima */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeTopSlow {
+  opacity: 0; /* Certifique-se de que o elemento começa invisível */
+  animation: fadeTopSlow  1s ease-in-out forwards; /* Tempo de animação definido */
+}
+
+.fadeBottomSlow {
+  opacity: 0; /* Certifique-se de que o elemento começa invisível */
+  animation: fadeBottomSlow  1s ease-in-out forwards; /* Tempo de animação definido */
+}
+
+
+.laminado {
+  background: linear-gradient(90deg, #e91e63, #ff9800, #e91e63);
+  background-size: 200%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: laminar 3s linear infinite;
+}
+
+/* Animação de laminação */
+@keyframes laminar {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.checkboxShake {
+  animation: checkboxShake  2s ease-in-out forwards; 
+}
+
+
+@keyframes checkboxShake {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  30% {
+    transform: scale(1.4) translateX(-3px);
+  }
+  60% {
+    transform: scale(1.4) translateX(3px);
+  }
+  80% {
+    transform: scale(1.4) translateX(-2px);
+  }
+  100% {
+    transform: scale(1.2) translateX(0);
+  }
+}

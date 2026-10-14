@@ -1,0 +1,119 @@
+.destaqueSection {
+  display: flex;
+  gap: 32px;
+
+  @media (max-width: 1333px) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .destaque {
+    max-width: 533px;
+    width: 100%;
+    height: 100%;
+    max-height: 594px;
+
+    @media (max-width: 1333px) {
+      max-width: 100%;
+    }
+    .content {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+
+      @media (max-width: 1333px) {
+        width: 100%;
+      }
+    }
+
+    .imgCard {
+      max-width: 533px;
+      width: 100%;
+      height: 342px;
+      object-fit: cover;
+      border-radius: 6px;
+
+      @media (max-width: 1333px) {
+        max-width: 100%;
+      }
+    }
+    .cardText {
+      .title {
+        display: flex;
+        gap: 12px;
+      }
+    }
+  }
+
+  .secondDestaque {
+    display: flex;
+    max-width: 747px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 32px;
+
+    @media (max-width: 1333px) {
+      max-width: 100%;
+    }
+
+    .content {
+      display: flex;
+      gap: 24px;
+      height: 100%;
+      max-height: 272px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        max-height: 100%;
+      }
+    }
+
+    .cardText {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .title {
+        display: flex;
+        gap: 12px;
+      }
+    }
+
+    .imgCard {
+      max-width: 364px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+        max-height: 342px;
+      }
+    }
+  }
+}
+
+.tagGroup {
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 18px;
+  border: 1px solid var(--colorSecondary);
+  color: var(--colorSecondary);
+  font-weight: 600;
+  letter-spacing: 1.92px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+
+  &:hover {
+    background: var(--colorSecondary);
+    color: var(--gray1);
+  }
+}
+

@@ -1,0 +1,122 @@
+.diagramContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.diagramContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 32px;
+
+  @media (max-width: 1156px) {
+    gap: 20px;
+  }
+
+  @media (max-width: 592px) {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 200px;
+    min-width: 200px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    @media (max-width: 1156px) {
+      max-width: 150px;
+      min-width: 150px;
+    }
+    @media (max-width: 1000px) {
+      max-width: 120px;
+      min-width: 120px;
+    }
+    @media (max-width: 860px) {
+      max-width: 120px;
+      min-width: 120px;
+    }
+      @media (max-width: 592px) {
+        max-width: 100%;
+  }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+    h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666666;
+      margin-bottom: 0px;
+      text-align: center;
+    }
+  }
+}
+
+.cardCentral {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  max-width: 200px;
+  min-width: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  @media (max-width: 828px) {
+    display: none;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+  h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 0px;
+  }
+
+  .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #272e48;
+    width: 100px;
+    height: 100px;
+    border-radius: 255px;
+    h3 {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    p {
+      color: #ffffff;
+      font-size: 0.8rem;
+      margin-bottom: 0px;
+      font-weight: bold;
+    }
+  }
+}

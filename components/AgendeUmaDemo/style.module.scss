@@ -1,0 +1,82 @@
+.sectionConteConosco {
+  position: relative;
+  display: flex;
+  padding: 0px 0px 50px 0px !important;
+
+  @media screen and (max-width: 768px) {
+    padding: 0px !important;
+  }
+
+  @media screen and (max-width: 1150px) {
+    padding: 0px;
+  }
+
+  .vector {
+    width: 100%;
+    max-width: 378px;
+    position: relative;
+    top: -48px;
+    opacity: 0.1;
+  }
+
+  .divConteConosco {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .agendeUmDemo {
+      width: 70% !important;
+
+      @media screen and (max-width: 1200px) {
+        width: 100% !important;
+      }
+    }
+
+    .ctaDemo {
+      width: 30% !important;
+      justify-content: end !important;
+      display: flex;
+      z-index: 99;
+
+      @media screen and (max-width: 1200px) {
+        width: 100% !important;
+        justify-content: start !important;
+      }
+    }
+  }
+
+  .vectorIcon {
+    position: absolute;
+    top: -173px;
+    right: 0px;
+    opacity: 0.05;
+    width: 391px;
+    @media (max-width: 1261px) {
+      opacity: 0.1;
+    }
+  }
+  .cta {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 64px;
+
+    @media (max-width: 768px) {
+      gap: 0px;
+      flex-direction: column;
+    }
+
+    .ctaText {
+      width: 75% !important;
+      @media (max-width: 768px) {
+        width: 100% !important;
+      }
+    }
+  }
+}

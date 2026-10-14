@@ -1,0 +1,224 @@
+.medialSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  font-size: 16px;
+  color: #118a6b;
+}
+
+.informativeCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(314px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1312px;
+  text-align: left;
+  font-size: 20px;
+  color: #272e48;
+  margin: 0 auto;
+}
+
+.cards {
+  border-radius: 16px;
+  background: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+}
+
+.cardMobile {
+  width: 100%;
+  position: relative;
+  border-radius: 19px;
+  border: 1px solid rgba(249, 249, 249, 0);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  text-align: center;
+  font-size: 12px;
+
+  .promovemos {
+    position: relative;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+  }
+
+  .wrapper {
+    border-radius: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0px;
+  }
+
+  .servicosQualidade {
+    align-self: stretch;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .content {
+    align-self: stretch;
+    position: relative;
+    font-size: 16px;
+  }
+
+  .title {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    text-align: left;
+    font-size: 24px;
+    color: #272e48;
+  }
+}
+
+.solutions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 44px;
+}
+
+.textInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  p {
+    margin-bottom: 0px !important;
+  }
+}
+
+.sectionServices {
+  background: var(--colorSecondary);
+
+  h2 {
+    color: #ffffff !important;
+  }
+  p {
+    color: #ffffff !important;
+  }
+  .simplifiqueAsRotinas {
+    color: #ffffff !important;
+    text-align: center;
+  }
+}
+
+.fluxoTitle {
+  max-width: 800px;
+  padding: 60px 0 20px 0;
+  h2 {
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 600;
+    color: #272e48;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: clamp(14px, 2.5vw, 16px);
+    font-weight: 500;
+    color: #272e48;
+    margin-bottom: 0px;
+  }
+}
+
+.fluxoSVG {
+  width: 100%;
+}
+
+// ________________________________
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: var(--colorSecondary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
+.modalContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.expandBtn {
+  position: absolute;
+  right: 32px;
+  z-index: 2;
+  font-size: 22px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 10001;
+  font-size: 28px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.zoomWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.fluxoSVGModal {
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+}
+
+.zoomControls {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 10001;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #0a7c4a;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

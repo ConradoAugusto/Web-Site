@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Atendimento ágil e comprometimento",
+    "text": [
+      "Depoimento fictício de exemplo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla."
+    ],
+    "author": "Nome do Cliente",
+    "position": "Gerente de Recursos Humanos - ",
+    "empresa": "Empresa Exemplo A",
+    "empresaUrl": "https://example.com",
+    "avatar": "pessoa2.jpg"
+  },
+  {
+    "title": "Parceria com confiança e dedicação",
+    "text": [
+      "Depoimento fictício de exemplo. Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna."
+    ],
+    "author": "Nome do Cliente",
+    "position": "Gerente de Recursos Humanos - ",
+    "empresa": "Empresa Exemplo B",
+    "empresaUrl": "https://example.com",
+    "avatar": "pessoa1.jpg"
+  },
+  {
+    "title": "Agilidade no atendimento e parceria",
+    "text": [
+      "Depoimento fictício de exemplo. Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et."
+    ],
+    "author": "Nome do Cliente",
+    "position": "Coordenadora de RH - ",
+    "empresa": "Empresa Exemplo C",
+    "empresaUrl": "https://example.com",
+    "avatar": "pessoa3.jpg"
+  }
+]

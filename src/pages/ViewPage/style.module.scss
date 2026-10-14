@@ -1,0 +1,107 @@
+.backLink {
+  display: flex;
+  gap: 12px;
+  transition: .3s ease-in-out;
+
+  &:hover{
+    svg {
+      transform: scale(1.1) translateX(-5px);
+      transition: .3s ease-in-out;
+    }
+  }
+}
+
+.sectionVw{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px !important;
+}
+
+.act{
+  margin-top: 50px!important;
+
+  ol{
+    @media (max-width: 768px) {
+      display: none !important;
+    }
+  }
+}
+
+figure{
+    overflow-x: auto; /* Permite scroll horizontal no celular, salvando o layout */
+    margin: 2.5rem 0;
+    border-radius: 8px; /* Arredondamento suave do container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra elegante de profundidade */
+    border: 1px solid #eaeaea; /* Borda externa bem clarinha */
+    
+    /* Scrollbar estilizada para quando houver rolagem no mobile */
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 4px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      font-size: 0.95rem;
+      margin: 0; 
+
+      /* A classe "has-fixed-layout" do WP tenta forçar colunas de larguras iguais */
+      &.has-fixed-layout {
+        table-layout: fixed;
+        min-width: 600px; /* Garante que as colunas não fiquem espremidas no celular */
+      }
+
+      thead {
+        th {
+          background-color: #f8f9fa; /* Fundo do cabeçalho */
+          color: #212529;
+          font-weight: 700;
+          text-align: left;
+          padding: 1rem 1.2rem;
+          border-bottom: 2px solid #21b88f; /* Linha de destaque com a cor principal do seu app */
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid #eaeaea;
+          transition: background-color 0.2s ease;
+
+          /* Remove a borda da última linha para não chocar com a borda do figure */
+          &:last-child {
+            border-bottom: none;
+          }
+
+          /* Efeito sutil ao passar o mouse na linha (verde bem claro) */
+          &:hover {
+            background-color: rgba(33, 184, 143, 0.05); 
+          }
+
+          td {
+            padding: 1rem 1.2rem;
+            color: #495057;
+            vertical-align: top;
+            line-height: 1.6;
+
+            /* Destaca as tags <strong> (como "Eficiência", "Rastreabilidade") */
+            strong {
+              color: #212529;
+              font-weight: 600;
+            }
+          }
+        }
+
+        /* Efeito zebrado para facilitar a leitura se a tabela for muito longa */
+        tr:nth-child(even) {
+          background-color: #fcfcfc;
+        }
+      }
+    }
+  }

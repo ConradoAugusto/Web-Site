@@ -1,0 +1,28 @@
+.carrosselWrapper {
+  overflow: hidden;
+}
+
+.carrossel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px !important;
+  padding: 50px 0px;
+  background: transparent;
+  background: #fafbfd;
+}
+
+.logosContainer {
+  display: flex;
+  gap: 45px;
+  overflow: hidden;
+}
+
+.carrossel img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}

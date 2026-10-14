@@ -1,0 +1,285 @@
+.postSection {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 1241px) {
+      flex-direction: column;
+    }
+  }
+}
+.tagOptions {
+  display: flex;
+  gap: 8px;
+
+  a {
+    color: var(--colorSecondary);
+    font-weight: 600 !important;
+  }
+}
+
+.tagOptionsWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  @media (max-width: 1241px) {
+    width: 100%;
+  }
+}
+
+.tagOptionsMenu {
+  display: flex;
+  gap: 12px;
+  margin: 0 50px;
+  overflow-x: hidden !important;
+  white-space: nowrap;
+  max-width: 800px;
+  
+
+  @media (max-width: 1241px) {
+    max-width: 100% !important;
+  }
+}
+
+.arrowButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 40px;
+  background: transparent;
+}
+
+.arrowButton:first-child {
+  left: -10px;
+  color: var(--colorPrimary);
+}
+
+.arrowButton:last-child {
+  right: -10px;
+  color: var(--colorPrimary);
+}
+
+.hidden {
+  display: none;
+}
+
+.tag:hover {
+  background: var(--gray1);
+}
+
+.activeTag {
+  background-color: var(--colorPrimary) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+/* Estilo inicial de todos */
+.tag {
+  padding: 8px 24px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.92px;
+  word-wrap: break-word;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tagOptionsMenu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  @media (max-width: 1108px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cards {
+    width: 100%;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+
+    .cardText {
+      .title {
+        display: flex;
+        gap: 12px;
+      }
+    }
+
+    .cardImg {
+      width: 100%;
+      height: 364px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+  }
+}
+
+.cardTags {
+  display: flex;
+  width: fit-content;
+  padding: 0px 24px;
+  letter-spacing: 1.92px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 18px;
+  border: 1px solid var(--colorSecondary);
+  color: var(--colorSecondary) !important;
+  z-index: 999;
+  transition: 0.5s !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+
+  &:hover {
+    background: var(--colorSecondary) !important;
+    font-weight: 600 !important;
+    color: var(--gray1) !important;
+    transition: 0.5s !important;
+  }
+}
+
+.paginationWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  /* Empilhar os itens em telas menores */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.paginationButton {
+  padding: 12px 24px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 600;
+  color: #272e48;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  /* Botões menores em telas pequenas */
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.divPaginationButtonMb{
+  display: none;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 8px 16px;
+    display: flex;
+  }
+
+  .paginationButtonMb {
+    color: var(--colorSecondary) !important;
+
+    &:hover {
+      color: var(--colorPrimary) !important;
+    }
+  }
+}
+
+
+
+
+.cardContainer.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.cards {
+  scroll-snap-align: center;
+}
+
+
+.ellipsis {
+  padding: 0 8px;
+  font-size: clamp(12px, 2vw, 16px);
+  color: #b0b0b0;
+  cursor: default;
+  user-select: none;
+}
+
+.pageNumbers {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.pageNumber {
+  padding: 12px 18px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(12px, 2vw, 16px);
+  font-weight: 600;
+  color: #272e48;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background: #f5f5f5;
+  }
+
+  &.activePage {
+    background: #272e48;
+    color: white;
+    font-weight: 700;
+  }
+
+  /* Tamanho menor em telas pequenas */
+  @media (max-width: 480px) {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "site-institucional-rh",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "^3.4.0",
+    "bootstrap": "^5.3.3",
+    "chart.js": "^4.5.0",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "lucide-react": "^1.25.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.5",
+    "react-loading": "^2.0.3",
+    "react-router-dom": "^6.23.1",
+    "react-slick": "^0.30.2",
+    "react-zoom-pan-pinch": "^3.7.0",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.6.13"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "sass": "^1.77.1",
+    "vite": "^8.1.5"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "last 2 versions"
+  ]
+}

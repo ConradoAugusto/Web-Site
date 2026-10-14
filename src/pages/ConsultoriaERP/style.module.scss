@@ -1,0 +1,314 @@
+.hero {
+  margin: -14px auto 0px auto !important;
+  width: 100%;
+  max-width: 1441px !important;
+  display: flex !important;
+  padding: 32px 0px 0px 72px !important;
+  box-sizing: border-box;
+  gap: 20px !important;
+
+  @media (max-width: 1089px) {
+    flex-direction: column-reverse !important;
+    gap: 45px !important;
+    padding: 32px 30px 60px 30px !important;
+  }
+}
+
+.carrossel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px !important;
+  margin-bottom: 24px !important;
+  padding: 50px;
+  background: transparent;
+  border-top: 10px solid var(--colorPrimary);
+  background: #fafbfd;
+
+  img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+.sectionServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  background: #fafbfd;
+
+  .servicesItemLeft {
+    border: 2px solid transparent !important;
+    align-items: start !important;
+    gap: 40px !important;
+  }
+
+  .servicesItemRight {
+    border: 2px solid transparent !important;
+    align-items: start !important;
+    gap: 40px !important;
+  }
+}
+
+.cardMobile {
+  width: 100%;
+  position: relative;
+  border-radius: 19px;
+  border: 1px solid rgba(249, 249, 249, 0);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+  text-align: center;
+  font-size: 12px;
+
+  .promovemos {
+    position: relative;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+  }
+
+  .wrapper {
+    border-radius: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0px;
+  }
+
+  .servicosQualidade {
+    align-self: stretch;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .content {
+    align-self: stretch;
+    position: relative;
+    font-size: 16px;
+  }
+
+  .title {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    text-align: left;
+    font-size: 24px;
+    color: #272e48;
+  }
+}
+
+.solutions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.topologyStarIcon {
+  width: 36px;
+  position: relative;
+  height: 36px;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.gestoDeRh {
+  align-self: stretch;
+  position: relative;
+  line-height: 32px;
+  font-weight: 600;
+}
+.simplifiqueAsRotinas {
+  align-self: stretch;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+}
+.businessplanIcon {
+  width: 36px;
+  position: relative;
+  height: 36px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.informativeCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(314px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1312px;
+  text-align: left;
+  font-size: 20px;
+  color: #272e48;
+  margin: 0 auto;
+}
+
+.cards {
+  border-radius: 16px;
+  background: linear-gradient(
+    45deg,
+    rgba(237, 252, 246, 0.4),
+    rgba(227, 235, 246, 0.4) 50%,
+    rgba(235, 235, 238, 0.4)
+  );
+  border: 1px solid #dddee1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+}
+
+.medialSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  font-size: 16px;
+  color: #118a6b;
+}
+
+.cardsConfianca {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: start;
+  color: white;
+}
+
+// _____________________________
+
+.sectionConfianca {
+  background: #272e48;
+  border-radius: 64px 0px;
+
+  .sectionConfiancaText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectionConfiancaCards {
+    display: flex;
+    gap: 24px;
+  }
+  .imageIcon {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.sectionConfiancaMb {
+  margin-top: 50px;
+  background: #272e48;
+
+  position: relative;
+  .divConfianca {
+    margin: 64px 0px !important;
+    border-radius: 160px 0px 0px 160px;
+    padding: 40px 0px;
+  }
+
+  .sectionConfiancaTextb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectionConfiancaCardsb {
+    display: flex;
+    gap: 24px;
+  }
+  .imageIconMb {
+    display: none !important;
+  }
+}
+.pad {
+  padding: 50px !important;
+  gap: 32px !important;
+}
+
+// _________________________________________
+
+.sectionComments {
+  display: flex !important;
+  z-index: 2 !important;
+  position: relative !important;
+  z-index: 2 !important;
+
+  @media (max-width: 768px) {
+    transform: inherit !important;
+    margin-top: -64px !important;
+  }
+}
+
+.sectionForms {
+  @media (max-width: 768px) {
+    margin-top: 67px !important;
+  }
+}
+
+// _________________________
+
+.sectionConteConosco {
+  position: relative;
+  display: flex;
+  .vector {
+    width: 100%;
+    max-width: 378px;
+    position: relative;
+    top: -48px;
+    opacity: 0.1;
+  }
+
+  .divConteConosco {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .vectorIcon {
+    position: absolute;
+    top: 0;
+    right: 38px;
+    opacity: 0.05;
+    width: 264px;
+    @media (max-width: 1261px) {
+      opacity: 0.1;
+    }
+  }
+  .cta {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 64px;
+
+    @media (max-width: 768px) {
+      gap: 0px;
+      flex-direction: column;
+    }
+
+    .ctaText {
+      width: 75% !important;
+      @media (max-width: 768px) {
+        width: 100% !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.carrosselWrapper {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  padding: 100px 20px;
+  margin-bottom: 100px;
+}
+
+.carrossel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+
+  .title {
+    border-bottom: 1px solid var(--colorSecondary);
+  }
+}
+
+.logosContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 50px;
+  justify-items: center;
+  width: 100%;
+  transition: all 0.3s ease;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+    @media (max-width: 534px) {
+  gap: 100px;
+
+    grid-template-columns: repeat(1, 1fr); 
+  }
+}
+
+.logo {
+  max-width: 180px;
+  height: auto;
+}

@@ -1,0 +1,56 @@
+.sectionConteConosco {
+  position: relative;
+  display: flex;
+  padding: 0px 0px 50px 0px !important;
+
+  @media screen and (max-width: 768px) {
+    padding: 0px !important;
+  }
+
+  @media screen and (max-width: 1150px) {
+    padding: 0px;
+  }
+
+  .vector {
+    width: 100%;
+    max-width: 378px;
+    position: relative;
+    top: -48px;
+    opacity: 0.1;
+  }
+
+  .divConteConosco {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .vectorIcon {
+    position: absolute;
+    top: 0;
+    right: 38px;
+    opacity: 0.1;
+    width: 350px;
+    @media (max-width: 1000px) {
+      opacity: 0;
+    }
+  }
+  .cta {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 64px;
+
+    @media (max-width: 768px) {
+      gap: 0px;
+      flex-direction: column;
+    }
+
+    .ctaText {
+      width: 75% !important;
+      @media (max-width: 768px) {
+        width: 100% !important;
+      }
+    }
+  }
+}

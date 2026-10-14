@@ -1,0 +1,401 @@
+.heroSection {
+  max-width: 1087px !important;
+  margin: auto !important;
+  width: 100% !important;
+  height: 760px !important;
+
+  .heroContainer {
+    height: 100% !important;
+    max-height: 1012px !important;
+
+    @media (max-width: 999px) {
+      transform: inherit !important;
+      height: 100% !important;
+      max-height: 370px !important;
+    }
+
+    .heroText {
+      display: flex !important;
+      width: 130% !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 12px !important;
+      margin-top: 56px !important;
+
+      @media (max-width: 1145px) {
+        width: 90% !important;
+      }
+
+      @media (max-width: 768px) {
+        width: 100% !important;
+        margin-top: 28px !important;
+      }
+
+      @media (min-width: 768px) AND (max-width: 1000px) {
+        margin-top: 62px !important;
+      }
+
+      .paragraphSlogan {
+        max-width: 627px !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+    }
+  }
+}
+
+.sectionClientes {
+  position: relative;
+  top: -295px;
+  transform: scale(0.8);
+
+  @media(max-width: 1400px) {
+    transform: scale(1);
+  }
+}
+
+.sectionConheça {
+  display: flex !important;
+  background: var(--colorSecondary);
+  justify-content: center;
+  border-radius: 0px 0px 100px 0px;
+  .sectionConheçaBorder {
+    width: 100%;
+    border-radius: 60px 0px;
+    background: var(
+      --10-supportive-gradient-color-cloudy-glass,
+      linear-gradient(45deg, #edfcf6 0%, #e3ebf6 50%, #ebebee 100%)
+    );
+  }
+  @media (max-width: 1000px) {
+    display: none !important;
+  }
+
+  .demo {
+    height: 100% !important;
+    max-height: 750px !important;
+    margin-bottom: 50px;
+    border: 19px solid var(--colorSecondary);
+    border-radius: 38px;
+  }
+
+  .smartphone {
+    position: absolute !important;
+    right: -329px !important;
+    top: 114px !important;
+
+    @media (max-width: 1469px) {
+      right: -290px !important;
+    }
+
+    @media (max-width: 1372px) {
+      right: -260px !important;
+    }
+
+    @media (max-width: 1268px) {
+      padding: 0px 65px 0px 0px !important;
+    }
+  }
+
+  .demoApp {
+    display: block;
+    left: 13px;
+    z-index: 2;
+    height: 519px;
+    position: relative;
+    width: fit-content;
+    border-radius: 38px;
+  }
+}
+
+.sectionConheça_Sm {
+  @media (min-width: 1000px) {
+    display: none !important;
+  }
+
+  .btnTitleAccordion {
+    p {
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--gray3);
+    }
+  }
+}
+
+.solucoesText {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .acreditamos {
+    text-align: center !important;
+
+    @media (max-width: 1150px) {
+      text-align: start !important;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100% !important;
+    gap: 24px;
+  }
+}
+
+.divServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+
+  .servicesItemLeft {
+    border: 2px solid transparent !important;
+    align-items: start !important;
+    gap: 40px !important;
+  }
+
+  .servicesItemRight {
+    border: 2px solid transparent !important;
+    align-items: start !important;
+    gap: 40px !important;
+  }
+}
+
+.divCardServices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #dddee1;
+    background: linear-gradient(
+      45deg,
+      rgba(237, 252, 246, 0.4) 0%,
+      rgba(227, 235, 246, 0.4) 50%,
+      rgba(235, 235, 238, 0.4) 100%
+    );
+    width: 100%;
+    transition: 0.25s;
+  }
+}
+
+.cardPortal {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #dddee1;
+  background: linear-gradient(
+    45deg,
+    rgba(237, 252, 246, 0.4) 0%,
+    rgba(227, 235, 246, 0.4) 50%,
+    rgba(235, 235, 238, 0.4) 100%
+  );
+  width: 100%;
+  transition: 0.25s;
+  display: flex;
+  align-items: start;
+
+  @media screen and (max-width: 1070px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .buttonPortal {
+    @media screen and (max-width: 1070px) {
+      display: none !important;
+    }
+  }
+
+  .buttonPortalMb {
+    @media screen and (max-width: 1070px) {
+      display: flex !important;
+      justify-content: center !important;
+      margin-top: 24px !important;
+      height: fit-content !important;
+    }
+    @media screen and (min-width: 1070px) {
+      display: none !important;
+    }
+  }
+
+  &:hover {
+    background: #29365f;
+    transition: 0.25s;
+
+    h3 {
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+
+    .buttonPortal {
+      background: var(--linearPrimary) !important;
+
+      @media screen and (max-width: 1070px) {
+        display: none !important;
+      }
+    }
+
+    .buttonPortalMb {
+      @media screen and (max-width: 1070px) {
+        background: var(--linearPrimary) !important;
+        display: flex !important;
+        width: 100% !important;
+        justify-content: center !important;
+        margin-top: 24px !important;
+        height: fit-content !important;
+      }
+      @media screen and (min-width: 1070px) {
+        display: none !important;
+      }
+    }
+  }
+
+  .cardPortalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 40% !important;
+
+    @media screen and (max-width: 1070px) {
+      width: 100% !important;
+    }
+  }
+
+  .imgPortal {
+    width: 60% !important;
+    object-fit: contain !important;
+
+    @media screen and (max-width: 1070px) {
+      width: 100% !important;
+    }
+  }
+}
+
+.imgSmall {
+  height: 22rem !important;
+
+  @media (min-width: 554px) {
+    height: 27rem !important;
+  }
+  @media (min-width: 614px) {
+    height: 34rem !important;
+  }
+  @media (min-width: 712px) {
+    height: 44rem !important;
+  }
+
+  img {
+    height: 100% !important;
+    margin-bottom: 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 6px 8px rgba(8, 8, 8, 0.04),
+      0 16px 20px rgba(8, 8, 8, 0.03), 32px 0 48px rgba(8, 8, 8, 0.02);
+  }
+}
+
+.sectionServices {
+  .tag {
+    margin-top: 100px !important;
+
+    @media (max-width: 768px) {
+      margin-top: 60px !important;
+      transform: inherit !important;
+    }
+  }
+
+  .servicesHeader {
+    width: 100% !important;
+    max-width: 838px !important;
+    margin: auto;
+
+    @media (max-width: 768px) {
+      transform: inherit !important;
+    }
+  }
+}
+
+.sectionAbout {
+  position: relative !important;
+  .grand {
+    width: 100vw !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 46px;
+    position: absolute !important;
+
+    img {
+      width: 100% !important;
+      max-width: 600px !important;
+      opacity: 0.1;
+      filter: opacity(0.3);
+    }
+  }
+  .container {
+    margin-top: 100px !important;
+  }
+
+  .aboutHeader {
+    width: 100% !important;
+    max-width: 1085px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin: auto !important;
+    align-items: center !important;
+
+    @media (max-width: 768px) {
+      transform: inherit !important;
+    }
+  }
+
+  .aboutNumbers {
+    transform: scale(0.9) !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 100px auto 100px auto !important;
+    width: 100% !important;
+
+    @media (max-width: 768px) {
+      transform: inherit !important;
+    }
+
+    .numbers {
+      width: 100% !important;
+      max-width: 1000px !important;
+      justify-content: center !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 50px !important;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.sectionComments {
+  display: flex !important;
+  z-index: 2 !important;
+  position: relative !important;
+  z-index: 2 !important;
+
+  @media (max-width: 768px) {
+    transform: inherit !important;
+    margin-top: -64px !important;
+  }
+}
+
+.sectionForms {
+  @media (max-width: 768px) {
+    margin-top: 67px !important;
+  }
+}

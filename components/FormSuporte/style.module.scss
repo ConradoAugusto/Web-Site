@@ -1,0 +1,40 @@
+.formContainer {
+  width: 100%;
+  max-width: 973px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media screen and (max-width: 768px) {
+    h2,
+    h3 {
+      text-align: center !important;
+      width: 100% !important;
+    }
+  }
+
+  .title {
+    color: white;
+    font-size: 54px;
+    font-weight: 600;
+    word-wrap: break-word;
+  }
+  .subTitle {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
+  a {
+    color: #ffffff !important;
+  }
+}
+
+.greenColor {
+  color: #21b88f !important;
+}
+.ctaActive {
+  border: transparent !important;
+}

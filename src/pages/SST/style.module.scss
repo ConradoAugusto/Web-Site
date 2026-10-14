@@ -1,0 +1,421 @@
+.hero {
+  margin: -14px auto 0px auto !important;
+  width: 100%;
+  max-width: 1441px !important;
+  display: flex !important;
+  padding: 100px 0px 100px 72px !important;
+  box-sizing: border-box;
+  gap: 20px !important;
+
+  @media (max-width: 1089px) {
+    flex-direction: column-reverse !important;
+    gap: 45px !important;
+    padding: 32px 30px 60px 30px !important;
+  }
+}
+
+.sectionSuport {
+  background-image: url(../../assets/SESMT/sesmt.jpg) !important;
+  .divSupport {
+    display: flex !important;
+    align-items: center !important;
+    gap: 40px !important;
+    margin-bottom: 24px !important;
+
+    @media (max-width: 1240px) {
+      align-items: center !important;
+      gap: 40px !important;
+      flex-direction: column;
+    }
+  }
+
+  .foque {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+    width: 100% !important;
+
+    h1,
+    p {
+      @media screen and (max-width: 768px) {
+        text-align: center !important;
+      }
+    }
+
+    @media (max-width: 1240px) {
+      max-width: 100% !important;
+      position: inherit !important;
+      margin-top: 70px;
+    }
+
+    .cardsNumbers {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      height: 100% !important;
+      align-items: stretch;
+
+      @media (max-width: 1240px) {
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 75px;
+        gap: 10px;
+      }
+
+      @media (max-width: 600px) {
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 75px;
+        gap: 10px !important;
+      }
+
+      .cards {
+        border-radius: 8px;
+        flex: 1; /* Force both cards to take equal space */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Optional: align content inside the card */
+
+        @media (max-width: 768px) {
+          width: 100% !important;
+          padding: 24px !important;
+          flex-direction: column !important;
+        }
+      }
+    }
+  }
+}
+
+.form_container {
+  display: flex !important;
+  width: 100% !important;
+  max-width: 886px !important;
+  flex-direction: column !important;
+  gap: 42px !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
+
+  p,
+  label,
+  h2 h3,
+  div {
+    color: white;
+  }
+
+  @media (max-width: 1240px) {
+  }
+}
+
+.containerFormFirst {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  padding: 40px;
+  background: var(--colorSecondary);
+  border-radius: 8px;
+  border: 1px solid #dddee1;
+
+  .formContent {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+
+    label {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 10px !important;
+    }
+
+    input,
+    textarea,
+    select {
+      background: #ffffff;
+    }
+  }
+}
+
+/* ___________card____________ */
+
+.servicesSection {
+  background: var(--colorSecondary);
+  .servicesContainer {
+    display: flex !important;
+    padding: 16px !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+}
+
+/* _________________Beneficios________________ */
+.cardsBeneficiosSESMT {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 64px auto !important;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 850px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .coinsIcon {
+    width: 36px;
+    position: relative;
+    height: 36px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .iconProposito {
+    width: 56px;
+    height: 56px;
+    background: transparent;
+    border-radius: 255px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    &.red {
+      background: #fee4e3;
+    }
+    &.yellow {
+      background: #ffefd4;
+    }
+    &.blue {
+      background: #d7eafe;
+    }
+  }
+
+  .redusoDeCustos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--colorSecondary);
+    font-weight: 600;
+  }
+
+    .titleCardFAP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--colorSecondary);
+    font-weight: 900;
+  }
+
+  .textInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorSecondary);
+    font-weight: 400;
+  }
+
+  .cards {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    border-radius: 21px;
+    background: white;
+    border: 1px solid #dddee1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 16px;
+    text-align: left;
+    font-size: 20px;
+    color: var(--colorPrimary);
+    font-family: Ritual;
+  }
+}
+
+.cardsOQueRecebe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 64px auto !important;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 850px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .coinsIcon {
+    width: 36px;
+    position: relative;
+    height: 36px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .iconProposito {
+    width: 56px;
+    height: 56px;
+    background: transparent;
+    border-radius: 255px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .redusoDeCustos {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--colorSecondary);
+    font-weight: 600;
+  }
+
+  .textInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    color: var(--colorSecondary);
+    font-weight: 400;
+  }
+
+  .cards {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    border-radius: 21px;
+    background: white;
+    border: 1px solid #dddee1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 24px;
+    gap: 16px;
+    text-align: left;
+    font-size: 20px;
+    color: var(--colorPrimary);
+    font-family: Ritual;
+  }
+
+  .implementamosEstratgiasQue {
+    display: flex;
+    text-align: start;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    font-family: Montserrat;
+    margin-bottom: 0px;
+  }
+}
+
+.implementamosEstratgiasQue {
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+  font-family: Montserrat;
+  margin-bottom: 0px;
+}
+
+.jornada {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 64px auto !important;
+  width: 100%;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 658px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .badge {
+      width: 64px;
+      height: 64px;
+      background: transparent;
+      border-radius: 255px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--fontPrimary);
+    }
+    .number {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    h3 {
+      margin-bottom: 0;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.quemSomos {
+  display: flex;
+  flex-direction: row !important;
+  gap: 30px;
+
+  .conte {
+    display: flex;
+    padding: 32px 0px;
+    gap: 32px;
+    @media screen and (max-width: 1200px) {
+      flex-direction: column;
+    }
+
+    .conteText {
+          @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
+    }
+
+    
+    .cta {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 32px;
+      align-items: center;
+      
+      
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

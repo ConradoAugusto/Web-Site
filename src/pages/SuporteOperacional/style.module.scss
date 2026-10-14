@@ -1,0 +1,403 @@
+.header {
+  margin-top: -18px !important;
+}
+
+.sectionSuport {
+  .divSupport {
+    display: flex !important;
+    position: relative !important;
+    top: -112px !important;
+    align-items: center !important;
+    gap: 40px !important;
+    margin-bottom: -50px !important;
+
+    @media (max-width: 1240px) {
+      align-items: center !important;
+      gap: 40px !important;
+      flex-direction: column;
+    }
+  }
+
+  .foque {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+    width: 100% !important;
+    top: 70px !important;
+    position: relative !important;
+    align-items: end !important;
+
+    @media (max-width: 1240px) {
+      max-width: 100% !important;
+      position: inherit !important;
+      margin-top: 70px;
+    }
+
+    .cardsNumbers {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      height: 100% !important;
+      align-items: stretch;
+
+      @media (max-width: 1240px) {
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 75px;
+        gap: 10px;
+      }
+
+      @media (max-width: 600px) {
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 75px;
+        gap: 10px !important;
+      }
+
+      .cards {
+        border-radius: 8px;
+        flex: 1; /* Force both cards to take equal space */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Optional: align content inside the card */
+
+        @media (max-width: 768px) {
+          width: 100% !important;
+          padding: 24px !important;
+          flex-direction: column !important;
+        }
+      }
+    }
+  }
+}
+
+.carrossel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px !important;
+  margin-bottom: 24px !important;
+
+  img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+.sectionServices {
+  display: flex;
+  padding: 88px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  background: #f9f9f9;
+
+  .servicesItemLeft {
+    background: linear-gradient(78deg, #f9f9f9 -8.17%, #f4f4f4 117.26%);
+    border: 2px solid transparent !important;
+  }
+
+  .servicesItemRight {
+    background: linear-gradient(78deg, #f9f9f9 -8.17%, #f4f4f4 117.26%);
+    border: 2px solid transparent !important;
+  }
+}
+
+.contentEficiencia {
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.buttonCta {
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  .button {
+    height: fit-content !important;
+    @media (max-width: 1200px) {
+      width: 100% !important;
+    }
+  }
+}
+
+.sectionAbout {
+  position: relative !important;
+  .grand {
+    width: 100vw !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 46px;
+    position: absolute !important;
+
+    img {
+      width: 100% !important;
+      max-width: 600px !important;
+      opacity: 0.1;
+      filter: opacity(0.3);
+    }
+  }
+  .container {
+    margin-top: 100px !important;
+  }
+
+  .aboutHeader {
+    width: 100% !important;
+    max-width: 1085px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin: auto !important;
+    align-items: center !important;
+
+    @media (max-width: 768px) {
+      transform: inherit !important;
+    }
+  }
+
+  .aboutNumbers {
+    transform: scale(0.9) !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 100px auto 100px auto !important;
+    width: 100% !important;
+
+    @media (max-width: 768px) {
+      transform: inherit !important;
+    }
+
+    .numbers {
+      width: 100% !important;
+      max-width: 1000px !important;
+      justify-content: center !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 50px !important;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.sectionComments {
+  display: flex !important;
+  z-index: 2 !important;
+  position: relative !important;
+  z-index: 2 !important;
+
+  @media (max-width: 768px) {
+    transform: inherit !important;
+    margin-top: -64px !important;
+  }
+}
+
+.cardMobile {
+  width: 100%;
+  position: relative;
+  border-radius: 19px;
+  background: linear-gradient(77.52deg, #f9f9f9, #f4f4f4);
+  border: 1px solid rgba(249, 249, 249, 0);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 32px;
+  text-align: center;
+  font-size: 12px;
+
+  .promovemos {
+    position: relative;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+  }
+
+  .wrapper {
+    border-radius: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0px;
+  }
+
+  .servicosQualidade {
+    align-self: stretch;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .content {
+    align-self: stretch;
+    position: relative;
+    font-size: 16px;
+  }
+
+  .title {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    text-align: left;
+    font-size: 24px;
+    color: #272e48;
+    font-family: Ritual;
+  }
+
+  .frameParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+
+  .arrow-right-square-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .benefits {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    text-align: left;
+    font-size: 16px;
+    color: #272e48;
+  }
+
+  .textInfo {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .frame-133-1 {
+    align-self: stretch;
+    position: relative;
+    max-width: 100%;
+    height: 253px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+}
+
+.eficiencia {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 642px) {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    height: 204px;
+    width: 100%;
+    justify-content: center;
+    height: 204px !important;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    border-radius: 16px;
+    border: 1px solid var(--11-graycale-colors-gray-0150, #f6f7f8);
+    background: linear-gradient(45deg, #edfcf6 0%, #e3ebf6 50%, #ebebee 100%);
+  }
+}
+
+.form_container {
+  display: flex !important;
+  width: 100% !important;
+  max-width: 886px !important;
+  flex-direction: column !important;
+  gap: 42px !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.12);
+
+  @media (max-width: 1240px) {
+  }
+}
+
+.containerForm {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  padding: 40px;
+  background: var(--colorSecondary);
+
+  .formContent {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+
+    label {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 10px !important;
+    }
+
+    input,
+    textarea,
+    select {
+      background: var(--gray2);
+    }
+  }
+}
+
+.containerFormFirst {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #dddee1;
+
+  .formContent {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+
+    label {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 10px !important;
+    }
+
+    input,
+    textarea,
+    select {
+      background: #adb5bd;
+    }
+  }
+}

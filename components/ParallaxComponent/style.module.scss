@@ -1,0 +1,137 @@
+.sectionPortalTheme {
+  position: relative;
+  padding: 50px 0 0 0 !important;
+  height: 960px;
+
+  @media (max-width: 600px) {
+    padding: 130px 0 0 0 !important;
+  }
+
+  .portalTheme {
+    max-width: 1200px !important;
+    position: relative !important;
+    top: -300px !important;
+    z-index: 34;
+
+    .hero-animation-img {
+      width: 100%;
+      max-width: 1040px;
+      position: relative;
+      height: fit-content;
+      top: -77px;
+      z-index: 34;
+
+      @media (min-width: 648px) {
+        top: -120px;
+      }
+
+      @media (min-width: 768px) AND (max-width: 1000px) {
+        top: -196px;
+      }
+    }
+
+    .hero-dashboard-img {
+      width: 100%;
+      height: 30vh;
+      perspective: 1000px;
+      transform: perspective(1200px) rotateX(-13.83deg) rotateY(-3.79deg)
+        scale3d(1, 1, 1);
+    }
+
+    .imgsPotal > img {
+      width: 100% !important;
+      border-radius: 6px;
+      border: 2.3px solid #dddee1;
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    .animation-img {
+      width: 100%;
+      max-width: 1118px;
+      min-width: 322px;
+    }
+
+    .position-absolute.hero-elements-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateZ(1rem);
+      transition: transform 0.1s ease-out;
+    }
+
+    .themeBtn {
+      display: flex !important;
+      justify-content: center !important;
+      gap: 12px !important;
+      padding: 12px 0px !important;
+
+      @media (max-width: 500px) {
+        padding: 0px !important;
+      }
+    }
+
+    .themeText {
+      display: flex !important;
+      flex-direction: column !important;
+      margin-top: 80px !important;
+      margin-bottom: -50px !important;
+      gap: 36px !important;
+
+      @media (min-width: 375px) AND (max-width: 650px) {
+        margin-bottom: -150px !important;
+      }
+
+      h2,
+      p {
+        color: var(--gray1) !important;
+      }
+    }
+  }
+}
+
+.sectionBlur {
+  position: absolute;
+  top: -52px;
+  left: 112px;
+  width: 100% !important;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+
+  .blurL {
+    position: relative;
+    top: 100px;
+    left: -297px;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    animation: moveRight 20s infinite alternate ease-in-out;
+  }
+  
+  .blurR {
+    position: relative;
+    top: -96px;
+    left: 549px;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    animation: moveLeft 20s infinite alternate ease-in-out; 
+  }
+  @keyframes moveRight {
+    from {
+      left: -297px;
+    }
+    to {
+      left: 850px;
+    }
+  }
+  
+  @keyframes moveLeft {
+    from {
+      left: 549px;
+    }
+    to {
+      left: -550px;
+    }
+  }
+}

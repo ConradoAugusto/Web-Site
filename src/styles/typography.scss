@@ -1,0 +1,374 @@
+.title {
+  font-family: var(--fontPrimary) !important;
+  font-weight: 600 !important;
+  color: var(--colorSecondary);
+
+  &.ritual {
+    font-family: var(--fontPrimary) !important;
+  }
+
+  &.friday {
+    font-size: clamp(54px, 8vw, 150px) !important;
+    font-family: var(--fontPrimary) !important;
+    font-weight: 600 !important;
+  }
+
+  &.montserrat {
+    font-family: var(--fontSecondary) !important;
+  }
+
+  &.one {
+    font-size: clamp(32px, 4vw, 54px) !important;
+    line-height: clamp(44px, 4vw, 72px);
+  }
+  &.two {
+    font-size: clamp(48px, 4vw, 64px) !important;
+    line-height: clamp(50px, 4vw, 60px);
+  }
+  &.three {
+    font-size: clamp(32px, 4vw, 42px) !important;
+    letter-spacing: clamp(0.84px, 4vw, 0.64px);
+    font-weight: 600;
+  }
+  &.four {
+    font-size: clamp(24px, 4vw, 36px) !important;
+    line-height: clamp(72px, 4vw, 54px);
+    letter-spacing: clamp(0.64px, 4vw, 0.52px) !important;
+  }
+  &.five {
+    font-size: clamp(18px, 4vw, 28px) !important;
+    letter-spacing: clamp(0.64px, 4vw, 0.52px) !important;
+    font-weight: 600 !important ;
+    font-feature-settings: "liga" off, "clig" off;
+  }
+  &.six {
+    font-size: clamp(18px, 4vw, 20px) !important;
+    letter-spacing: clamp(0.64px, 4vw, 0.52px) !important;
+    font-weight: 600 !important ;
+  }
+  &.medium {
+    font-weight: 500 !important;
+  }
+  &.bold {
+    font-weight: 600 !important;
+  }
+  &.textCenter {
+    text-align: center !important;
+  }
+  &.sobre {
+    font-size: clamp(26px, 4vw, 32px) !important;
+  }
+
+  &.blue {
+    color: var(--color-blue) !important;
+  }
+  &.black {
+    color: var(--color-black) !important;
+  }
+  &.white {
+    color: var(--color-white) !important;
+  }
+}
+
+.paragraph {
+  font-weight: 400 !important;
+  line-height: 2;
+  font-size: clamp(14px, 4vw, 18px);
+  letter-spacing: clamp(0.36px, 4vw, 0.28px) !important;
+  color: var(--colorSecondary);
+
+  &.tag {
+    color: var(--colorTextPrimary);
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: clamp(12px, 4vw, 16px) !important;
+    font-weight: 600 !important;
+    letter-spacing: 1.92px !important;
+  }
+
+  &.formVendas {
+    line-height: inherit !important;
+    letter-spacing: 0 !important;
+    font-size: clamp(10px, 4vw, 14px) !important;
+  }
+
+  &.menuSub {
+    line-height: 16px !important;
+    letter-spacing: 0 !important;
+    font-size: clamp(12px, 4vw, 14px) !important;
+    white-space: wrap !important;
+    text-align: start !important;
+  }
+
+  &.medium {
+    font-weight: 500 !important;
+  }
+
+  &.semiBold {
+    font-weight: 600 !important;
+  }
+
+  &.bold {
+    font-weight: 700 !important;
+    line-height: 30px !important;
+    letter-spacing: 0.24px !important;
+  }
+
+  &.extraBold {
+    font-weight: 800 !important;
+  }
+
+  &.extraExtraBold {
+    font-weight: 900 !important;
+  }
+
+  &.textBold {
+    letter-spacing: clamp(0.36px, 4vw, 0.28px) !important;
+    font-weight: 600 !important;
+  }
+
+  &.text {
+    letter-spacing: clamp(2.16px, 4vw, 1.68px) !important;
+    text-transform: uppercase !important;
+  }
+
+  &.text-16px {
+    font-size: clamp(12px, 4vw, 16px) !important;
+    line-height: inherit !important;
+    letter-spacing: 0 !important;
+  }
+
+  &.text-20px {
+    font-size: clamp(16px, 4vw, 20px) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &.text-24px {
+    font-size: clamp(18px, 4vw, 24px) !important;
+    line-height: inherit !important;
+    letter-spacing: 0 !important;
+  }
+
+  &.text-36px {
+    font-size: clamp(24px, 2vw, 36px) !important;
+    letter-spacing: 0 !important;
+  }
+
+  &.text-28px {
+    font-size: clamp(18px, 2vw, 28px) !important;
+    letter-spacing: 0 !important;
+  }
+
+  &.acordion {
+    font-size: clamp(18px, 4vw, 24px) !important;
+    letter-spacing: clamp(0.48px, 4vw, 0.36px) !important;
+    font-weight: 600 !important;
+  }
+
+  .li {
+    font-size: clamp(10px, 4vw, 16px) !important;
+  }
+
+  &.blue {
+    color: var(--color-blue) !important;
+  }
+  &.black {
+    color: var(--color-black) !important;
+  }
+  &.white {
+    color: var(--color-white) !important;
+  }
+  &.red {
+    color: var(--color-red) !important;
+  }
+}
+
+.cookies {
+  font-size: clamp(10px, 4vw, 12px) !important;
+}
+
+.blogData {
+  font-size: clamp(10px, 4vw, 12px) !important;
+}
+
+.labelText {
+  font-size: clamp(16px, 4vw, 18px) !important;
+  letter-spacing: clamp(0.36px, 4vw, 0.32px) !important;
+  line-height: normal !important;
+  font-weight: 500 !important;
+}
+
+.linkNavbar {
+  font-size: 18px !important;
+  letter-spacing: clamp(0.36px, 4vw, 0.32px) !important;
+  font-weight: 600 !important;
+
+  @media (max-width: 1300px) {
+    font-size: 14px !important;
+  }
+}
+
+.inputText {
+  font-size: clamp(14px, 4vw, 18px) !important;
+  letter-spacing: clamp(0.32px, 4vw, 0.28px) !important;
+  font-weight: 500, 4vw, 600 !important;
+  line-height: normal !important;
+}
+
+.textHeroAbout {
+  font-size: clamp(14px, 4vw, 20px) !important;
+  letter-spacing: clamp(0.32px, 4vw, 0.28px) !important;
+  font-weight: 500 !important;
+}
+
+.ctaService {
+  font-size: clamp(12px, 4vw, 18px) !important;
+}
+
+.textAcordion {
+  font-size: clamp(14px, 4vw, 16px) !important;
+  letter-spacing: clamp(0.32px, 4vw, 0.28px) !important;
+  font-weight: 500 !important;
+}
+
+.textNumbers {
+  font-size: clamp(14px, 4vw, 18px) !important;
+  max-width: 216px !important;
+  width: 100% !important;
+  text-align: center !important;
+  font-weight: 600 !important;
+}
+
+.number {
+  width: fit-content !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: clamp(52px, 4vw, 96px) !important;
+  letter-spacing: clamp(1.44px, 4vw, 1.92px) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.32px !important;
+  background: var(--linearPrimary, #21b88f);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.numberAbout {
+  width: fit-content !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: clamp(52px, 4vw, 96px) !important;
+  letter-spacing: clamp(1.44px, 4vw, 1.92px) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.32px !important;
+  background: var(--linearSecondary, #272e48);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.politicas {
+  font-size: clamp(10px, 4vw, 14px) !important;
+}
+
+.postDate {
+  font-size: clamp(10px, 4vw, 14px) !important;
+  color: var(--gray12);
+  font-weight: 500 !important;
+  font-feature-settings: "liga" off, "clig" off;
+}
+
+.titlePost {
+  display: -webkit-box;
+  font-family: var(--fontSecondary) !important;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
+  min-height: 2.5em;
+  max-height: 2.5em;
+
+  &:hover {
+    color: var(--colorPrimary) !important;
+  }
+}
+
+.postDescricaoDestaque {
+  overflow: hidden;
+  color: #62626b;
+  font-feature-settings: "liga" off, "clig" off;
+  text-overflow: ellipsis;
+  font-size: clamp(10px, 4vw, 14px) !important;
+  font-weight: 500;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  text-overflow: ellipsis;
+}
+
+.postDescricao {
+  overflow: hidden;
+  color: #62626b;
+  font-feature-settings: "liga" off, "clig" off;
+  text-overflow: ellipsis;
+  font-size: clamp(10px, 4vw, 14px) !important;
+  font-weight: 500;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  text-overflow: ellipsis;
+}
+
+.postAllDescricao {
+  overflow: hidden;
+  color: #62626b;
+  font-feature-settings: "liga" off, "clig" off;
+  text-overflow: ellipsis;
+  font-size: clamp(10px, 4vw, 14px) !important;
+  font-weight: 500;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+}
+
+.textNoWrap {
+  white-space: nowrap !important;
+}
+
+.lineHeight {
+  line-height: normal !important;
+}
+
+.lineHeight-24 {
+  line-height: 24px !important;
+}
+
+.lineHeight-28 {
+  line-height: 28px !important;
+}
+
+.lineHeight-32 {
+  line-height: 32px !important;
+}
+
+.text-white-important {
+  color: white !important;
+}
+
+.lineHeight-56 {
+  line-height: 56px !important;
+}

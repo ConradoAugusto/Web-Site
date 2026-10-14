@@ -1,0 +1,99 @@
+.sectionForm {
+  display: flex !important;
+}
+
+.sectionForm .container {
+  display: flex !important;
+  width: 100%;
+  justify-content: end !important;
+}
+
+.sectionForm .container .portal {
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 40%;
+  padding-top: 80px;
+  padding-right: 80px;
+  display: flex;
+  position: relative;
+
+  @media (max-width: 1000px) {
+    display: none !important;
+  }
+}
+
+.sectionForm .container .portal img {
+  width: auto;
+  height: 85%;
+  position: absolute;
+  right: 0;
+  transform: translate(32px);
+}
+
+.containerForm {
+  padding: 30px 100px;
+  overflow: auto;
+
+  @media (max-width: 850px) {
+    padding: 30px 50px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.forms {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 70% !important;
+
+  @media (max-width: 1000px) {
+    width: 100% !important;
+  }
+}
+
+.close {
+  position: fixed !important;
+  top: 20px !important;
+  right: 28px !important;
+  cursor: pointer !important;
+  font-size: 20px !important;
+  color: var(--colorWhite) !important;
+  transition: 0.5s !important;
+  border: 1px solid var(--colorWhite) !important;
+  border-radius: 255px !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: var(--colorPrimary) !important;
+  z-index: 1000 !important;
+}
+
+.close:hover {
+  transition: 0.5s !important;
+  color: var(--secondary-hover) !important;
+}
+
+.inputPhoneContact {
+  display: flex !important;
+
+  @media (max-width: 700px) {
+    display: flex !important;
+    gap: 12px;
+    flex-direction: column !important;
+  }
+  .inputPhone {
+    width: 100% !important;
+    display: flex;
+  }
+}
+@media screen and (min-width: 928px) {
+  .formPadding {
+    padding: 0px 32px;
+  }
+}
