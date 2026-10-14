@@ -7,7 +7,7 @@ export default defineConfig({
     global: "globalThis",
   },
   build: {
-    outDir: "build",
+    outDir: "dist",
     target: "es2015",
   },
 });
